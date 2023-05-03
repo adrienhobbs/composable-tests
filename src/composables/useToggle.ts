@@ -10,7 +10,7 @@ interface Subscription {
   once: boolean
 }
 
-export default function useToggle(
+export function useToggle(
   initialValue: boolean = false
 ): [Callable, Callable, () => void, Ref<boolean>] {
   const booleanValue = ref(initialValue)
