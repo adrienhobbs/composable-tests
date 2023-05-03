@@ -46,6 +46,7 @@ export function useToggle(
       subscription.callback(value)
       if (subscription.once) {
         const index = callbacks.indexOf(subscription)
+
         if (index !== -1) {
           callbacks.splice(index, 1)
         }
